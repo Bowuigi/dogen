@@ -1,0 +1,6 @@
+Project: dogen
+Author: Bowuigi
+License: Zlib
+Description: Simple and easy way of generating documentation from comments, it is language agnostic, great for small proyects
+Dict name: Dictionaries
+Output file: README.md

@@ -1,0 +1,31 @@
+The dogen docs are made with dogen on a text file to show its coolness
+
+@dict acc_prefix Accepted prefixes for dogen commands like `dict`, `function`, etc.
+@field character @ 'at' character is supported, might be useful if you already have a codebase using Javadoc, Doxygen, etc.
+@field character \ 'backslash' character, to make switching from Doxygen easier
+@field character ! 'exclamation sign' character, because why not, it looks cool
+
+@function dict For struct/dictionary/hash table/whatever documentation, the name for it on the output can be changed on the dogenfile
+@param string name For structs, the type name, for everything else, the name of the global instance of the data structure
+@param string description Description of what that type/instance is for
+@return string Nicely formatted list with the dict name and every field of it, including the description of everything
+
+@function function For defining functions (or similar) on a language independent manner
+@param string name Name of the function
+@param string description Whatever the function does, it should be on this argument
+@return string Nicely formatted summary of the function with its parameters and return values
+
+@function field Defines a field of a dict
+@param string type String containing the type of the field, for example, `field char* my_string cool description`
+@param string name Name of the field
+@param string description Description of the field
+
+@function param Document the parameters of a function
+@param string type String containing the type of the parameter, for example: `char*`, `bool`, `table`
+@param string name Name of the parameter
+@param string description Description of the parameter
+
+@function return Document the return value of a function
+@param string type String containing the type of the return value, for example: `size_t`, `map`, `function`
+@param string name Name of the return value
+@param string description Description of the return value
